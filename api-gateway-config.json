@@ -9,7 +9,7 @@
     "/ai": {
       "post": {
         "x-amazon-apigateway-integration": {
-          "uri": "arn:aws:apigateway:{region}:lambda:path/2015-03-31/functions/arn:aws:lambda:{region}:{account_id}:function:ai-super-manager/invocations",
+          "uri": "arn:aws:apigateway:eu-north-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-north-1:YOUR_ACCOUNT_ID:function:ai-super-manager/invocations",
           "httpMethod": "POST",
           "type": "aws_proxy"
         },
@@ -20,5 +20,7 @@
         }
       }
     }
+  }
+}
   }
 }
