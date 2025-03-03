@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define required files and directories
-REQUIRED_FILES=("README.md" "requirements.txt" "install_dependencies.sh" "deploy_lambda.sh" "lambda_function.py")
+REQUIRED_FILES=("README.md" "requirements.txt" "install_dependencies.sh" "deploy_lambda.sh" "lambda/lambda_function.py")
 REQUIRED_DIRS=("lambda")
 
 # Function to check if a file exists
