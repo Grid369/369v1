@@ -1,22 +1,16 @@
 {
-  "swagger": "2.0",
+  "openapi": "3.0.1",
   "info": {
-    "version": "1.0",
-    "title": "API Gateway Configuration",
-    "description": "Configuration for AWS API Gateway"
+    "title": "MyLambdaAPI",
+    "version": "1.0"
   },
   "paths": {
-    "/ai": {
+    "/execute": {
       "post": {
         "x-amazon-apigateway-integration": {
-          "uri": "arn:aws:apigateway:eu-north-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-north-1:YOUR_ACCOUNT_ID:function:ai-super-manager/invocations",
-          "httpMethod": "POST",
-          "type": "aws_proxy"
-        },
-        "responses": {
-          "200": {
-            "description": "Successful operation"
-          }
+            "httpMethod": "POST",
+            "type": "aws_proxy",
+            "uri": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:YOUR_ACCOUNT:function:YOUR_FUNCTION/invocations"
         }
       }
     }
