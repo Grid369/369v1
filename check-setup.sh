@@ -1,5 +1,17 @@
 #!/bin/bash
 
+# Create/activate virtual environment
+python -m venv venv
+source venv/bin/activate
+
+# Upgrade pip
+python -m pip install --upgrade pip
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Rest of your checks...
+
 # Define required files and directories
 REQUIRED_FILES=("README.md" "requirements.txt" "install_dependencies.sh" "deploy_lambda.sh" "lambda/lambda_function.py")
 REQUIRED_DIRS=("lambda")
