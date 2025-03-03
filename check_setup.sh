@@ -37,7 +37,7 @@ done
 # Check Python dependencies
 echo "Checking Python dependencies..."
 if [ -f "requirements.txt" ]; then
-    pip install -r requirements.txt
+    pip install --user -r requirements.txt
 else
     echo "requirements.txt is missing! Cannot install Python dependencies."
 fi
