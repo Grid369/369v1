@@ -1,0 +1,7 @@
+# For Lambda-based agents
+aws lambda create-function \
+  --function-name DataProcessorAgent \
+  --runtime python3.12 \
+  --role $(echo $OUTPUTS | jq -r '.[] | select(.OutputKey=="DataProcessorRoleARN").OutputValue') \
+  --handler lambda_function.lambda_handler \
+  --zip-file fileb://agent.zip
