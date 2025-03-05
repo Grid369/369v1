@@ -1,1 +1,1 @@
-echo "boto3" > lambda/requirements.txt
+echo "boto" > lambda/requirements.txt
